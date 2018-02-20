@@ -94,45 +94,6 @@ namespace WindowsFormsApp6
             dataGridView1.DataSource = dt;
 
 
-            //booleans for checking smode. turning datagrids off and on
-            if (AltitudeOn == false)
-            {
-                dataGridView1.Columns[4].Visible = false;
-                checkBox3.Checked = false;
-            }else
-            {
-                checkBox3.Checked = true;
-
-            }
-
-            if (CadenceOn == false)
-            {
-                dataGridView1.Columns[3].Visible = false;
-                checkBox5.Checked = false;
-            }else
-            {
-                checkBox5.Checked = true;
-            }
-            if (PowerOn == false)
-            {
-                dataGridView1.Columns[5].Visible = false;
-                checkBox2.Checked = false;
-            }
-            else
-            {
-                checkBox2.Checked = true;
-            }
-
-            if (SpeedOn == false)
-            {
-                checkBox4.Checked = false;
-                dataGridView1.Columns[2].Visible = false;
-            }
-            else
-            {
-                checkBox4.Checked = true;
-            }
-
 
             //graph pane initalise
             GraphPane myPane = zedGraphControl1.GraphPane;
